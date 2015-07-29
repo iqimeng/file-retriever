@@ -98,7 +98,7 @@ static void indexFunc(GtkWidget *widget, gpointer *data){
 	getlogin_r(buf,1000);
 	userinfo = getpwnam(buf);
 
-	sprintf(buf,"./crawler %s",userinfo->pw_dir);
+	sprintf(buf,"./crawler %s","//");
 
 	g_spawn_command_line_async(buf,error);
 
