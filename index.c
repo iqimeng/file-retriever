@@ -139,7 +139,7 @@ int main(){
 	createStatusFile:
 	system("echo \"Index Status\n==================\nIndex created on :\n\"  > INDEX/STATUS.txt");
 	system("date >> INDEX/STATUS.txt");
-	system("echo \"Directory indexed : \"$HOME >> INDEX/STATUS.txt");
+	system("echo \"Directory indexed : \"#/ >> INDEX/STATUS.txt");
 	sprintf(temp,"echo \"No of Documents indexed : %d\" >> INDEX/STATUS.txt",numOfDocs);
 	system(temp);
 
